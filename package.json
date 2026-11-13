@@ -1,0 +1,30 @@
+{
+  "name": "practice-todo-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Slack 봇 연습용 할 일 백엔드",
+  "scripts": {
+    "dev": "tsx node_modules/moleculer/bin/moleculer-runner.js services/*.service.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "moleculer-runner dist/services/*.service.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "moleculer": "^0.14.36",
+    "moleculer-web": "^0.10.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.6",
+    "eslint": "^10.14.0",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.2",
+    "vitest": "^5.1.0"
+  }
+}
